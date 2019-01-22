@@ -2,8 +2,9 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {Router, Scene} from 'react-native-router-flux';
 import HomeScreen from './components/HomeScreen';
+import ProfileScreen from './components/ProfileScreen';
 import { Font, AppLoading } from 'expo';
-import {Header} from 'react-native-elements';
+
 
 export default class App extends React.Component {
   state = {
@@ -34,11 +35,13 @@ export default class App extends React.Component {
     }
 
     return (
-     <Router>
+     <Router >
       <Scene key="root">
-        <Scene key="Home" component={HomeScreen} initial>
-       
+        <Scene key="Home" component={HomeScreen} initial hideNavBar={true}>
         </Scene>
+
+
+      <Scene key="Profile" component={ProfileScreen} hideNavBar={true}/>
       </Scene>
 
 
