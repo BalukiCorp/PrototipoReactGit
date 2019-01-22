@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "@shoutem/ui": "^0.23.9",
+    "evil-icons": "^1.10.1",
     "expo": "^31.0.2",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
     "react-native-elements": "^0.19.1",
-    "react-native-router-flux": "^4.0.6"
+    "react-native-router-flux": "^4.0.6",
+    "react-native-vector-icons": "^6.2.0"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"
